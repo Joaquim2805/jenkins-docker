@@ -8,6 +8,7 @@ pipeline {
   }
   stages {
     stage('Build') {
+      agent any
       steps {
         sh 'docker build -t joaquim2805/proto-test .'
       }
